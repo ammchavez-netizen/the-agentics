@@ -1,0 +1,245 @@
+PS C:\Users\Anthony\Documents\Git Projects\agentic-starter-kits\crewai-kit> uv run python main.py "Transformer AI"                    
+╭──────────────────────────────────────────────────────────── ✨ Update Available ✨ ────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  A new version of CrewAI is available!                                                                                                         │
+│                                                                                                                                                │
+│  Current version: 1.15.27                                                                                                                      │
+│  Latest version:  1.15.28                                                                                                                      │
+│                                                                                                                                                │
+│  To update, run: uv sync --upgrade-package crewai                                                                                              │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────────────────── 🚀 Crew Execution Started ───────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Crew Execution Started                                                                                                                        │
+│  Name: crew                                                                                                                                    │
+│  ID: a989d9c3-248c-4de0-99bd-c6f02162afd0                                                                                                      │
+│                                                                                                                                                │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────────── 📋 Task Started ────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Task Started                                                                                                                                  │
+│  Name: Research Transformer AI. List 5 key facts and 2 open questions.                                                                         │
+│  ID: 3bd146c3-97fb-4dda-a9d1-f55b6d9acddc                                                                                                      │
+│                                                                                                                                                │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────────── 🤖 Agent Started ───────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Agent: Research Analyst                                                                                                                       │
+│                                                                                                                                                │
+│  Task: Research Transformer AI. List 5 key facts and 2 open questions.                                                                         │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────── ✅ Agent Final Answer ─────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Agent: Research Analyst                                                                                                                       │
+│                                                                                                                                                │
+│  Final Answer:                                                                                                                                 │
+│  **Research Brief – Transformer AI**                                                                                                           │
+│                                                                                                                                                │
+│  ---                                                                                                                                           │
+│                                                                                                                                                │
+│  ### 5 Key Facts (well‑documented)                                                                                                             │
+│                                                                                                                                                │
+│  - **Self‑Attention Mechanism**                                                                                                                │
+│    Transformers replace recurrent or convolutional layers with a *self‑attention* module that computes pairwise interactions between all       │
+│  tokens in a sequence. This allows each token to directly attend to any other token, enabling efficient parallel processing and long‑range     │
+│  dependency modeling. (Vaswani et al., 2017)                                                                                                   │
+│                                                                                                                                                │
+│  - **Scalable Pre‑training & Fine‑tuning Paradigm**                                                                                            │
+│    Large‑scale unsupervised pre‑training on massive text corpora (e.g., GPT‑3, PaLM, LLaMA) followed by task‑specific fine‑tuning (or          │
+│  prompting) has become the dominant recipe for state‑of‑the‑art performance across NLP, vision, and multimodal tasks. Empirical results        │
+│  consistently show that performance scales roughly predictably with model size, data quantity, and compute (Kaplan et al., 2020).              │
+│                                                                                                                                                │
+│  - **Quadratic Complexity in Sequence Length**                                                                                                 │
+│    The standard self‑attention operation has O(N²) time and memory cost with respect to sequence length N. This limits vanilla Transformers    │
+│  to a few thousand tokens without specialized hardware or algorithmic tricks. Numerous “efficient Transformer” variants (e.g., Longformer,     │
+│  Performer, FlashAttention) have been proposed to mitigate this bottleneck.                                                                    │
+│                                                                                                                                                │
+│  - **Transferability Across Modalities**                                                                                                       │
+│    The same core architecture, with minor modality‑specific tokenization (e.g., image patches for Vision Transformers, audio frames for Audio  │
+│  Transformers), achieves competitive results in vision (ViT, Swin), speech (Wav2Vec 2.0), and multimodal models (Flamingo, CLIP). This         │
+│  suggests that the attention‑based representation learning is largely modality‑agnostic.                                                       │
+│                                                                                                                                                │
+│  - **Emergent Capabilities & Scaling Laws**                                                                                                    │
+│    Empirical studies have observed *emergent* behaviors—capabilities that appear abruptly once a model crosses a certain size or data          │
+│  threshold (e.g., in‑context learning, chain‑of‑thought reasoning). While the phenomenon is reproducible, the underlying theoretical           │
+│  explanation remains an active research area.                                                                                                  │
+│                                                                                                                                                │
+│  ---                                                                                                                                           │
+│                                                                                                                                                │
+│  ### 2 Open Questions (areas of uncertainty)                                                                                                   │
+│                                                                                                                                                │
+│  - **Why Do Emergent Capabilities Appear?**                                                                                                    │
+│    The precise mechanisms that cause sudden jumps in ability (e.g., few‑shot learning, reasoning) as model scale increases are not yet         │
+│  understood. Are they a by‑product of data distribution, optimization dynamics, or intrinsic properties of the attention architecture?         │
+│  Clarifying this would inform more efficient model design.                                                                                     │
+│                                                                                                                                                │
+│  - **How to Achieve Robust, Controllable Generalization?**                                                                                     │
+│    Transformers excel at pattern memorization but can still produce hallucinations, bias, or unsafe outputs, especially when prompted          │
+│  out‑of‑distribution. Developing principled methods—whether through architecture changes, training curricula, or post‑hoc safety layers—to     │
+│  guarantee reliable behavior across diverse contexts remains an unresolved challenge.                                                          │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────────────────────── 📋 Task Completion ──────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Task Completed                                                                                                                                │
+│  Name: Research Transformer AI. List 5 key facts and 2 open questions.                                                                         │
+│  Agent: Research Analyst                                                                                                                       │
+│                                                                                                                                                │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────────── 📋 Task Started ────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Task Started                                                                                                                                  │
+│  Name: Using the research brief, write a 250-word explainer on Transformer AI.                                                                 │
+│  ID: f3a61a77-cccf-4c0c-9215-897844acc5df                                                                                                      │
+│                                                                                                                                                │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────────── 🤖 Agent Started ───────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Agent: Technical Writer                                                                                                                       │
+│                                                                                                                                                │
+│  Task: Using the research brief, write a 250-word explainer on Transformer AI.                                                                 │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────── ✅ Agent Final Answer ─────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Agent: Technical Writer                                                                                                                       │
+│                                                                                                                                                │
+│  Final Answer:                                                                                                                                 │
+│  Transformers are a type of artificial‑intelligence model that reads and writes text, images, or sound by looking at all parts of the input    │
+│  at once. Instead of processing words one after another, a Transformer uses a self‑attention mechanism that asks every token, “Which other     │
+│  tokens matter for me right now?” and computes a weighted sum of their information. Because each token can see the whole sequence, the model   │
+│  captures long‑range relationships and can run many calculations in parallel, making training faster.                                          │
+│                                                                                                                                                │
+│  The breakthrough came from training huge models on massive, unlabeled data sets. First the model learns general language patterns             │
+│  (pre‑training); then it is adapted to a specific task such as translation or summarisation (fine‑tuning or prompting). This two‑step recipe   │
+│  works not only for text but also for pictures, audio, and mixed‑modality data, simply by turning those inputs into a series of tokens (for    │
+│  example, image patches). As a result, the same core design powers chatbots, image classifiers, speech recognisers, and multimodal systems.    │
+│                                                                                                                                                │
+│  A practical limitation is that self‑attention costs time and memory that grow with the square of the sequence length, so very long inputs     │
+│  become expensive. Researchers have built “efficient” variants that approximate attention or restructure the computation to handle longer      │
+│  texts.                                                                                                                                        │
+│                                                                                                                                                │
+│  When models become large enough, they suddenly acquire new abilities—like solving puzzles with only a few examples—called emergent            │
+│  capabilities. Why these jumps happen, and how to make models reliably safe and unbiased, remain open research questions. Understanding these  │
+│  issues will guide the next generation of trustworthy, versatile AI systems.                                                                   │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────────────────────── 📋 Task Completion ──────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Task Completed                                                                                                                                │
+│  Name: Using the research brief, write a 250-word explainer on Transformer AI.                                                                 │
+│  Agent: Technical Writer                                                                                                                       │
+│                                                                                                                                                │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────────── 📋 Task Started ────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Task Started                                                                                                                                  │
+│  Name: Edit the explainer. Tighten it and mark any claim needing a source.                                                                     │
+│  ID: fcb36e4e-2b3e-4587-b243-a837448984ae                                                                                                      │
+│                                                                                                                                                │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────────── 🤖 Agent Started ───────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Agent: Editor                                                                                                                                 │
+│                                                                                                                                                │
+│  Task: Edit the explainer. Tighten it and mark any claim needing a source.                                                                     │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────── ✅ Agent Final Answer ─────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Agent: Editor                                                                                                                                 │
+│                                                                                                                                                │
+│  Final Answer:                                                                                                                                 │
+│  Transformers read and write text, images, or audio by attending to every part of the input simultaneously. Instead of processing tokens       │
+│  sequentially, self‑attention asks each token which other tokens are relevant and computes a weighted sum of their representations. This       │
+│  global view captures long‑range dependencies and enables parallel computation, speeding up training.                                          │
+│                                                                                                                                                │
+│  The breakthrough came from large‑scale unsupervised pre‑training on massive corpora, followed by task‑specific fine‑tuning or prompting. The  │
+│  same two‑step recipe works for text, images, audio, and multimodal data by tokenising each modality (e.g., image patches) [source needed].    │
+│  Consequently, a single architecture underlies chatbots, image classifiers, speech recognisers, and multimodal systems [source needed].        │
+│                                                                                                                                                │
+│  A practical limitation is that self‑attention requires O(N²) time and memory in sequence length N, making very long inputs expensive [source  │
+│  needed]. “Efficient” Transformer variants mitigate this by approximating attention or restructuring the computation to handle longer texts    │
+│  [source needed].                                                                                                                              │
+│                                                                                                                                                │
+│  When models reach sufficient scale they often exhibit sudden new abilities—such as few‑shot puzzle solving—referred to as emergent            │
+│  capabilities [source needed]. Understanding why these jumps occur and how to ensure safe, unbiased, and controllable generalisation remains   │
+│  an open research challenge.                                                                                                                   │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────────────────────── 📋 Task Completion ──────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Task Completed                                                                                                                                │
+│  Name: Edit the explainer. Tighten it and mark any claim needing a source.                                                                     │
+│  Agent: Editor                                                                                                                                 │
+│                                                                                                                                                │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────────── Crew Completion ────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Crew Execution Completed                                                                                                                      │
+│  Name: crew                                                                                                                                    │
+│  ID: a989d9c3-248c-4de0-99bd-c6f02162afd0                                                                                                      │
+│  Final Output: Transformers read and write text, images, or audio by attending to every part of the input simultaneously. Instead of           │
+│  processing tokens sequentially, self‑attention asks each token which other tokens are relevant and computes a weighted sum of their           │
+│  representations. This global view captures long‑range dependencies and enables parallel computation, speeding up training.                    │
+│                                                                                                                                                │
+│  The breakthrough came from large‑scale unsupervised pre‑training on massive corpora, followed by task‑specific fine‑tuning or prompting. The  │
+│  same two‑step recipe works for text, images, audio, and multimodal data by tokenising each modality (e.g., image patches) [source needed].    │
+│  Consequently, a single architecture underlies chatbots, image classifiers, speech recognisers, and multimodal systems [source needed].        │
+│                                                                                                                                                │
+│  A practical limitation is that self‑attention requires O(N²) time and memory in sequence length N, making very long inputs expensive [source  │
+│  needed]. “Efficient” Transformer variants mitigate this by approximating attention or restructuring the computation to handle longer texts    │
+│  [source needed].                                                                                                                              │
+│                                                                                                                                                │
+│  When models reach sufficient scale they often exhibit sudden new abilities—such as few‑shot puzzle solving—referred to as emergent            │
+│  capabilities [source needed]. Understanding why these jumps occur and how to ensure safe, unbiased, and controllable generalisation remains   │
+│  an open research challenge.                                                                                                                   │
+│                                                                                                                                                │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+=== FINAL OUTPUT (also saved to output/explainer.md) ===
+
+Transformers read and write text, images, or audio by attending to every part of the input simultaneously. Instead of processing tokens sequentially, self‑attention asks each token which other tokens are relevant and computes a weighted sum of their representations. This global view captures long‑range dependencies and enables parallel computation, speeding up training.
+
+The breakthrough came from large‑scale unsupervised pre‑training on massive corpora, followed by task‑specific fine‑tuning or prompting. The sametwo‑step recipe works for text, images, audio, and multimodal data by tokenising each modality (e.g., image patches) [source needed]. Consequently, a single architecture underlies chatbots, image classifiers, speech recognisers, and multimodal systems [source needed].
+
+A practical limitation is that self‑attention requires O(N²) time and memory in sequence length N, making very long inputs expensive [source needed]. “Efficient” Transformer variants mitigate this by approximating attention or restructuring the computation to handle longer texts [source needed].
+
+When models reach sufficient scale they often exhibit sudden new abilities—such as few‑shot puzzle solving—referred to as emergent capabilities [source needed]. Understanding why these jumps occur and how to ensure safe, unbiased, and controllable generalisation remains an open research challenge.
+╭──────────────────────────────────────────────────────────────── Tracing Status ────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                │
+│  Info: Tracing is disabled.                                                                                                                    │
+│                                                                                                                                                │
+│  To enable tracing, do any one of these:                                                                                                       │
+│  • Set tracing=True in your Crew/Flow code                                                                                                     │
+│  • Set CREWAI_TRACING_ENABLED=true in your project's .env file                                                                                 │
+│  • Run: crewai traces enable                                                                                                                   │
+│                                                                                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+PS C:\Users\Anthony\Documents\Git Projects\agentic-starter-kits\crewai-kit> 
+

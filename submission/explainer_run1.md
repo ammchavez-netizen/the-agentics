@@ -1,0 +1,7 @@
+Transformers read and write text, images, or audio by attending to every part of the input simultaneously. Instead of processing tokens sequentially, self‑attention asks each token which other tokens are relevant and computes a weighted sum of their representations. This global view captures long‑range dependencies and enables parallel computation, speeding up training.
+
+The breakthrough came from large‑scale unsupervised pre‑training on massive corpora, followed by task‑specific fine‑tuning or prompting. The same two‑step recipe works for text, images, audio, and multimodal data by tokenising each modality (e.g., image patches) [source needed]. Consequently, a single architecture underlies chatbots, image classifiers, speech recognisers, and multimodal systems [source needed].
+
+A practical limitation is that self‑attention requires O(N²) time and memory in sequence length N, making very long inputs expensive [source needed]. “Efficient” Transformer variants mitigate this by approximating attention or restructuring the computation to handle longer texts [source needed].
+
+When models reach sufficient scale they often exhibit sudden new abilities—such as few‑shot puzzle solving—referred to as emergent capabilities [source needed]. Understanding why these jumps occur and how to ensure safe, unbiased, and controllable generalisation remains an open research challenge.
